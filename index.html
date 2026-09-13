@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>START LINE — first sites + a board of live ones</title>
+  <meta name="description" content="Chris builds first-business sites for people who just decided, and runs a starting grid of live websites that need more clicks. Phone-first. Files you own." />
+  <meta name="theme-color" content="#050508" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#050508",
+            line: "#4D8BFF",
+            heat: "#FF2B3A",
+            paper: "#E8E4DA"
+          },
+          fontFamily: {
+            display: ["Bebas Neue", "Impact", "sans-serif"],
+            sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #050508; color: #E8E4DA; }
+    .asphalt {
+      background-image:
+        linear-gradient(90deg, rgba(77,139,255,.06) 0, transparent 18%),
+        repeating-linear-gradient(90deg, transparent 0 46px, rgba(232,228,218,.07) 46px 48px, transparent 48px 94px);
+      background-size: 100% 100%, 188px 100%;
+    }
+    .lane-dash {
+      background-image: repeating-linear-gradient(
+        90deg,
+        #FF2B3A 0 18px,
+        transparent 18px 32px
+      );
+    }
+    .grid-card {
+      background: #0a0a10;
+      border: 1px solid rgba(255,255,255,.1);
+      box-shadow: inset 4px 0 0 #4D8BFF;
+    }
+    .grid-card:hover { border-color: rgba(77,139,255,.55); }
+    .heat-inset { box-shadow: inset 4px 0 0 #FF2B3A; }
+    .glow-line { box-shadow: 0 0 26px rgba(77,139,255,.28); }
+    .reveal { opacity: 0; }
+  </style>
+</head>
+<body class="antialiased font-sans asphalt">
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-ink/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <a href="#top" class="font-display text-2xl tracking-wide">START LINE<span class="text-heat">.</span></a>
+      <nav class="flex items-center gap-5 text-xs sm:text-sm font-mono text-white/65">
+        <a href="#lanes" class="hover:text-white">Lanes</a>
+        <a href="#board" class="hover:text-white">Grid</a>
+        <a href="#start" class="bg-line text-ink px-3 py-1.5 rounded-full hover:bg-white">Send a line</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="pt-28 pb-20 px-5">
+      <div class="max-w-6xl mx-auto">
+        <p class="reveal font-mono text-[11px] tracking-[0.32em] uppercase text-line mb-5">Grid is live · two lanes</p>
+        <h1 class="reveal font-display text-6xl sm:text-8xl lg:text-[7.25rem] leading-[0.86] tracking-wide">
+          AN IDEA WITH<br />
+          NO URL IS STILL<br />
+          <span class="text-heat">IN THE PITS.</span>
+        </h1>
+        <div class="reveal mt-6 h-1.5 w-40 lane-dash"></div>
+        <p class="reveal mt-7 max-w-2xl text-lg sm:text-xl text-white/70">
+          First pages for modern young adults and adults who decided to start something and do not know the first click. Plus a starting grid that puts other live websites in front of people who will actually tap them.
+        </p>
+        <div class="reveal mt-8 flex flex-wrap gap-3">
+          <a href="#start" class="bg-heat text-white px-5 py-3 rounded-full font-medium hover:brightness-110">I need a first site</a>
+          <a href="#board" class="border border-white/20 px-5 py-3 rounded-full hover:border-line">Put mine on the grid</a>
+        </div>
+        <p class="reveal mt-10 font-mono text-[11px] tracking-[0.22em] uppercase text-white/40">Chris · client-owned HTML · under half a second</p>
+      </div>
+    </section>
+
+    <section id="lanes" class="px-5 py-16 border-t border-white/10">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-4">
+        <article class="reveal grid-card rounded-none p-8">
+          <p class="font-mono text-line text-xs tracking-widest uppercase">Lane 01 · build</p>
+          <h2 class="font-display text-4xl sm:text-5xl mt-3 tracking-wide">First site for a new thing</h2>
+          <p class="mt-4 text-white/70">You have the offer. You do not have a page that looks like you meant it. One file. Phone first. You keep it. Written for people who decided this week, not people collecting proposals.</p>
+          <ul class="mt-6 space-y-2 text-sm text-white/60 font-mono">
+            <li>— Who you are</li>
+            <li>— What they get</li>
+            <li>— How to hit you</li>
+          </ul>
+        </article>
+        <article class="reveal grid-card heat-inset rounded-none p-8">
+          <p class="font-mono text-heat text-xs tracking-widest uppercase">Lane 02 · promote</p>
+          <h2 class="font-display text-4xl sm:text-5xl mt-3 tracking-wide">A grid for sites already live</h2>
+          <p class="mt-4 text-white/70">Quiet URL, working site, no traffic. It gets a lane: name, one line, click out. Comedy, music, lots, studios — if it is up, it belongs here.</p>
+          <ul class="mt-6 space-y-2 text-sm text-white/60 font-mono">
+            <li>— Name + pitch</li>
+            <li>— Live link out</li>
+            <li>— Empty lanes stay empty until someone fills them</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 border-t border-white/10">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="reveal md:col-span-3">
+          <h2 class="font-display text-4xl sm:text-5xl tracking-wide">Built for people who just decided.</h2>
+        </div>
+        <p class="reveal text-white/70">Side hustle with no storefront. Adult switching work who wants a page before the cards print. Not a twelve-page brand book.</p>
+        <p class="reveal text-white/70">You send a paragraph. A draft comes back. Files stay yours. No CMS tax on a page that should just exist.</p>
+        <p class="reveal text-white/70">Already have a site? Skip the build. Ask for a grid slot and get eyes instead of another dashboard.</p>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 border-t border-white/10">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="reveal font-display text-4xl tracking-wide">Three lights</h2>
+        <ol class="mt-8 grid md:grid-cols-3 gap-4">
+          <li class="reveal border border-white/10 p-6 bg-white/[0.03]">
+            <span class="font-mono text-line text-sm">01</span>
+            <p class="mt-2 font-semibold">You send a paragraph</p>
+            <p class="text-white/60 text-sm mt-1">Name, what it does, who it is for. Budget if you have one. Live URL if you want the grid.</p>
+          </li>
+          <li class="reveal border border-white/10 p-6 bg-white/[0.03]">
+            <span class="font-mono text-line text-sm">02</span>
+            <p class="mt-2 font-semibold">A first draft ships</p>
+            <p class="text-white/60 text-sm mt-1">One maker. Tailwind, light motion, under half a second. You own the HTML.</p>
+          </li>
+          <li class="reveal border border-white/10 p-6 bg-white/[0.03]">
+            <span class="font-mono text-line text-sm">03</span>
+            <p class="mt-2 font-semibold">It leaves the pits</p>
+            <p class="text-white/60 text-sm mt-1">Domain + host handoff — or a lane on the grid if the site is already up.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="board" class="px-5 py-16 border-t border-white/10">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div>
+            <p class="reveal font-mono text-[11px] tracking-[0.28em] uppercase text-line">Live · click through</p>
+            <h2 class="reveal font-display text-4xl sm:text-5xl tracking-wide mt-2">On the grid</h2>
+          </div>
+          <p class="reveal font-mono text-xs text-white/40 max-w-xs">Not a portfolio. A starting grid. Quiet sites go first.</p>
+        </div>
+
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a class="reveal group grid-card p-6 hover:brightness-110" href="https://iris0nyx.com" target="_blank" rel="noopener">
+            <p class="font-mono text-[11px] text-white/40 uppercase tracking-widest">P1 · Artist</p>
+            <h3 class="font-display text-3xl mt-2 tracking-wide group-hover:text-line">Iris Onyx</h3>
+            <p class="text-white/60 mt-2 text-sm">Goth pop from Utah. Listen, shows, art. Dark and fast on a phone.</p>
+            <p class="font-mono text-[11px] text-line mt-4">iris0nyx.com →</p>
+          </a>
+
+          <a class="reveal group grid-card p-6 hover:brightness-110" href="https://dnc-computerz.vercel.app" target="_blank" rel="noopener">
+            <p class="font-mono text-[11px] text-white/40 uppercase tracking-widest">P2 · Lot</p>
+            <h3 class="font-display text-3xl mt-2 tracking-wide group-hover:text-line">DNC Computerz</h3>
+            <p class="text-white/60 mt-2 text-sm">Towers, parts, screens on shop tickets. A bench page that sells what is sitting there.</p>
+            <p class="font-mono text-[11px] text-line mt-4">dnc-computerz.vercel.app →</p>
+          </a>
+
+          <a class="reveal group grid-card p-6 hover:brightness-110" href="https://sameweekhq.vercel.app" target="_blank" rel="noopener">
+            <p class="font-mono text-[11px] text-white/40 uppercase tracking-widest">P3 · Studio</p>
+            <h3 class="font-display text-3xl mt-2 tracking-wide group-hover:text-line">Sameweek</h3>
+            <p class="text-white/60 mt-2 text-sm">Custom sites, built to brief, shipped fast. The shop that makes the doors.</p>
+            <p class="font-mono text-[11px] text-line mt-4">sameweekhq.vercel.app →</p>
+          </a>
+
+          <a class="reveal group grid-card p-6 hover:brightness-110" href="https://github.com/citruswill2-cmd/laughline" target="_blank" rel="noopener">
+            <p class="font-mono text-[11px] text-white/40 uppercase tracking-widest">P4 · Comedy</p>
+            <h3 class="font-display text-3xl mt-2 tracking-wide group-hover:text-line">Laughline</h3>
+            <p class="text-white/60 mt-2 text-sm">Chris Williams comedy page. First-draft, client-owned, made to get people to a set.</p>
+            <p class="font-mono text-[11px] text-line mt-4">github.com/citruswill2-cmd/laughline →</p>
+          </a>
+
+          <a class="reveal group grid-card p-6 hover:brightness-110" href="https://github.com/citruswill2-cmd/daytape" target="_blank" rel="noopener">
+            <p class="font-mono text-[11px] text-white/40 uppercase tracking-widest">P5 · Tape</p>
+            <h3 class="font-display text-3xl mt-2 tracking-wide group-hover:text-line">Daytape</h3>
+            <p class="text-white/60 mt-2 text-sm">Podcast + vlog first page. A place for the day’s tape without a platform tax.</p>
+            <p class="font-mono text-[11px] text-line mt-4">github.com/citruswill2-cmd/daytape →</p>
+          </a>
+
+          <a class="reveal group grid-card p-6 hover:brightness-110" href="https://github.com/citruswill2-cmd/redline" target="_blank" rel="noopener">
+            <p class="font-mono text-[11px] text-white/40 uppercase tracking-widest">P6 · Studio</p>
+            <h3 class="font-display text-3xl mt-2 tracking-wide group-hover:text-line">REDLINE</h3>
+            <p class="text-white/60 mt-2 text-sm">Studio for people priced out of agencies. Warm marketing. Client-owned single HTML.</p>
+            <p class="font-mono text-[11px] text-line mt-4">github.com/citruswill2-cmd/redline →</p>
+          </a>
+
+          <div class="reveal border border-dashed border-heat/50 p-6 sm:col-span-2 lg:col-span-3">
+            <p class="font-mono text-[11px] text-heat uppercase tracking-widest">Open lane</p>
+            <h3 class="font-display text-3xl mt-2 tracking-wide">Your URL next</h3>
+            <p class="text-white/60 mt-2 text-sm max-w-xl">New business or an existing site that needs traffic. Send the paragraph. If the site is live, it gets a lane. If it isn’t, it gets a first page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="px-5 py-20 border-t border-white/10">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="reveal font-display text-5xl sm:text-7xl leading-[0.9] tracking-wide">SAY THE THING.<br />THAT’S THE BRIEF.</h2>
+        <p class="reveal mt-5 text-white/70">No discovery call. Email a paragraph. If it fits, a draft comes back. If you already have a URL, send that and ask for the grid.</p>
+        <a class="reveal inline-block mt-8 bg-line text-ink px-6 py-3 rounded-full font-medium hover:bg-white glow-line" href="mailto:citruswill2@gmail.com?subject=START%20LINE%20brief&body=Name%3A%0AWhat%20I%20want%20the%20site%20to%20do%3A%0AWho%20it%20is%20for%3A%0ABudget%20(or%20not%20sure)%3A%0ALive%20URL%20if%20I%20already%20have%20one%3A">citruswill2@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-5 py-8 border-t border-white/10 text-white/35 font-mono text-xs flex flex-wrap justify-between gap-2">
+    <p>START LINE · files you own</p>
+    <p>night black · #4D8BFF · #FF2B3A</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script>
+    anime({
+      targets: ".reveal",
+      opacity: [0, 1],
+      translateY: [14, 0],
+      delay: anime.stagger(52),
+      duration: 440,
+      easing: "easeOutQuad"
+    });
+  </script>
+</body>
+</html>
